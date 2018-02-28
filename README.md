@@ -1,7 +1,5 @@
-# Code 2 Art Talk @ LIVP March 9th.
+# Introduction to Ethereum Smart Contracts 
 
-These slides are designed to accompany a introductory talk on Creative Coding.
-
-Target running time of 2 hours.
+These slides are designed to accompany a introductory talk on Ethereum Smart Contracts.
 
 Powered by reveal.js
