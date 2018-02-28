@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to Smart Contracts with Ethereum</title>
+
+		<meta name="description" content="Introduction to Smart Contracts with Ethereum">
+		<meta name="author" content="Nick Selvaggio">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="sego/sego_style.css">
+    <link rel="stylesheet" href="sego/code2art.css">
+
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js" integrity="sha256-hTadFyx999S2PaNVgI6MyGaojC6fzBZb2D5GibT/Fno=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.dom.min.js" integrity="sha256-XJv4F6vIKIxDBK9yFUP0+7QP6z7AHjwNvmAS/ZsNogM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.sound.min.js" integrity="sha256-6pVtCAjafcylu7oG0UhoMkUxhAMMMKP5elLWf9UXS+c=" crossorigin="anonymous"></script>
+
+     <script src="js/sketch1.js"></script>
+     <script src="js/sketch2.js"></script>
+     <script src="js/sketch3.js"></script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+    <header>
+    </header>
+
+    <div id="sketch"></div>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-state="openning">
+					<div class="headline">
+            <h5><span class='lowlight'>Introduction to</h5>
+            <h2><span>Smart Contracts</span></h2>
+            <h5>with Ethereum</h5>
+          </div>
+				</section>
+
+        <section>
+          <section data-state="sketch2">
+            <h2>A little about me.</h2>
+          </section>
+        </section>
+
+        <section data-state="clear" data-transition="linear" data-background="#527c97" data-background-transition="slide">
+          <h2>A little about you.</h2>
+          <aside class="notes">
+              <ul>
+                <li>Who is familar with blockchain?</li>
+                <li>Who knows what a smart contract is?</li>
+              </ul>
+            </aside>
+        </section>
+
+        <section  data-state="openning">
+          <section>
+            <h2>Blockchain Primer</h2>
+          </section>
+          <section data-state="clear">
+            <h2>What is a blockchain?</h2>
+            <img style="border: none" src="images/blockchain_illustration.png"></img>
+            <a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4" target="_blank">https://www.youtube.com/watch?v=bBC-nXj3Ng4</a>
+          </section>
+          <section>
+            <h2>Components of a blockchain</h2>
+            <p class="fragment" data-fragment-index="1">Database (Shared Ledger)</p>
+            <p class="fragment" data-fragment-index="2">Node Application</p>
+            <p class="fragment" data-fragment-index="3">Consensus Algorithm</p>
+          </section>
+          <section>
+            <h2>Type of Blockchains</h2>
+            <p class="fragment" data-fragment-index="1">Public (Permissionless)</p>
+            <p class="fragment" data-fragment-index="2">Private (Central)</p>
+            <p class="fragment" data-fragment-index="3">Consortium (Central Group)</p>
+          </section>
+        </section>
+        <section>
+          <section data-background="#505050">
+            <h2>Ethereum Primer</h2>
+            <img style="border: none; background-color: none;" src="images/ETHEREUM-ICON_Black_small.png"></img>
+          </section>
+          <section>
+            <h2>What is Ethereum?</h2>
+            <p class="fragment" data-fragment-index="1">Blockchain based distributed computing platform.</p>
+          </section>
+          <section>
+            <h2>Two types of accounts...</h2>
+            <p class="fragment" data-fragment-index="1">Personal Accounts</p>
+            <p class="fragment" data-fragment-index="2">Contract Accounts</p> 
+          </section>
+          <section>
+            <h2>Lets look at the blockchain:</h2>
+            <a href="http://etherscan.io" target="_blank">etherscan.io</a>
+          </section>
+          <section>
+            <h2>Types of applications (Dapps)</h2>
+            <p class="fragment" data-fragment-index="1">Tokens (ICOs)... ERC20</p>
+            <p class="fragment" data-fragment-index="2">Asset titles... ERC721</p>
+            <p class="fragment" data-fragment-index="3">Digital Identity</p>
+            <p class="fragment" data-fragment-index="4"><a href="http://stateofthedapps.com/" target="_blank">stateofthedapps.com</a></p>
+          </section>
+        </section>
+
+        <section>
+          <section data-state="openning">
+            <p>Enter</p>
+            <h2>Smart Contracts</h2>
+          </section>
+          <section>
+            <p>Applications are built, distributed and ran as a contract on the blockchain</p>
+          </section>
+          <section>
+            <p>We write these applications using the Solidity programming language</p>
+          </section>
+          <section data-state="clear">
+            <h3>Hello World Example</h3>
+            <pre>
+                <code class="solidity" data-trim>
+// Our version pragma
+pragma solidity ^0.4.6;
+
+
+// Define our contract.
+contract HelloWorld {
+  // Single simple method.
+  function displayMessage() constant returns (string m) {
+    return "Hello from a smart contract";
+  }
+}
+          </code></pre>
+          </section>
+          <section>
+              <h3>How do we run this?</h3>
+              <p class="fragment" data-fragment-index="1"><strong class='highlight'>Compile</strong>, using the solc compiler</p>
+              <p class="fragment" data-fragment-index="2"><strong class='highlight'>Deploy</strong>, by sending a transaction to the network</p>
+              <p class="fragment" data-fragment-index="3"><strong class='highlight'>Execute</strong>, by calling the contract with from a client program</p>
+          </section>
+          <section>
+              <h3>Lets tool up!</h3>
+              <p class="fragment" data-fragment-index="1">Solc</p>
+              <p class="fragment" data-fragment-index="2">Web3.js</p>
+              <p class="fragment" data-fragment-index="3">Ganache (TestRPC)</p>
+          </section>
+          <section>
+            <h3>Lets make this more interesting...</h3>
+            <h4 class="fragment" data-fragment-index="1">Lets build a simple lotto</h4>
+          </section>
+          <section>
+            <p>We will call our lotto</p>
+            <h1>Yolanda</h1>
+          </section>
+          <section>
+            <p>Yolanda.sol</p>
+            <pre>
+              <code class="solidity" data-trim>
+            pragma solidity ^0.4.6;
+
+contract Yolanda {
+  // All our contracts code lives here...
+}
+</code>
+</pre>
+          </section>
+          <section>
+            <p>Lets add some variables to keep track of the lotto.</p>
+            <pre>
+              <code class="solidity" data-trim>
+mapping(address => uint) usersBet;
+mapping(uint => address) users;
+uint nbUsers = 0;
+uint totalBets = 0;
+             
+address owner;
+</code>
+</pre>
+          </section>
+          <section>
+            <p>Next we will define our contructor</p>
+            <pre>
+              <code class="solidity" data-trim>
+function Yolanda() public {
+  // Register the owner of the contract to who created it.
+  owner = msg.sender;
+}
+              </code>
+            </pre>
+          </section>
+          <section>
+            <p>We are cooking</p>
+            <h2>Lets define some functionality</h2>
+            <p>We will define 3 methods:</p>
+            <p class="fragment" data-fragment-index="1">bet() - Which will allow us to send ether to it</p>
+            <p class="fragment" data-fragment-index="2">getJackpot() - Which will return the total value of jackpot</p>
+            <p class="fragment" data-fragment-index="3">endLottery() - Which will only be callable from the owner and will select a winner.</p>
+          </section>
+          <section>
+            <p>bet()</p>
+<pre>
+  <code class="solidity" data-trim>
+function bet() public payable {
+  if (msg.value > 0) {
+    if (usersBet[msg.sender] == 0) {
+      users[nbUsers] = msg.sender;
+      nbUsers += 1;
+    }
+    usersBet[msg.sender] += msg.value;
+    totalBets += msg.value;
+  }
+}
+</code>
+</pre>
+          </section>
+          <section>
+            <p>getJackpot()</p>
+<pre>
+  <code class="solidity" data-trim>
+function getJackpot() public view returns (uint t) {
+  return this.balance;
+}
+</code>
+</pre>
+          </section>
+          <section>
+            <p>endLottery()</p>
+<pre>
+  <code class="solidity" data-trim>
+function endLottery() public {
+  if (msg.sender == owner) {
+    uint sum = 0;
+    uint winningNumber = uint(block.blockhash(block.number-1)) % totalBets + 1;
+
+    for (uint i = 0; i < nbUsers; i++) {
+      sum += usersBet[users[i]];
+      if (sum >= winningNumber) {
+        selfdestruct(users[i]);
+        return;
+      }
+    }
+  }
+}
+</code>
+</pre>
+          </section>
+        <section>
+          <h2>Ok... lets deploy this bad boy.</h2>
+          <img style="width:50%; border: none" src="https://media.giphy.com/media/GwRBmXyEOvFtK/giphy.gif"></img>
+        </section>
+        <section>
+          <h2>How do we interact with this?</h2>
+        </section>
+        </section>
+        <section data-state="openning">
+          <h2>So much more to learn!</h2>
+          <p>Some interesting contract addresses on the MainNet:</p>
+          <p><a href="https://etherscan.io/address/0x8d12a197cb00d4747a1fe03395095ce2a5cc6819" target="_blank">EtherDelta Exchange</a></p>
+          <p><a href="https://etherscan.io/address/0x06012c8cf97bead5deae237070f9587f8e7a266d" target="_blank">Cryptokitties Core</a></p>
+          <p><a href="https://etherscan.io/address/0x26d5bd2dfeda983ecd6c39899e69dae6431dffbb" target="_blank">EtherDelta Exchange</a></p>
+        </section>
+      <section>
+          <p>Thank you!</p>
+          <h3>Questions?</h3>
+          <p>Twitter: <a href="http://twitter.com/direct">@direct</a></p>
+          <p><a href="https://www.linkedin.com/in/nickgs/">https://www.linkedin.com/in/nickgs/</p>
+      </section>
+			</div>
+		<footer class="sego-logo">
+      <a href="http://www.segosolutions.net/"><img src="sego/sego_logo_blkbg.png" alt="Sego Solutions logo" height=50" /></a>
+    </footer>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Parallax scrolling
+				//parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				//parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+      });
+      
+      //our initial sketch
+      var myp5 = new p5(s3, 'sketch');
+
+      Reveal.addEventListener('openning', function() {
+        document.getElementById("sketch").innerHTML = "";
+        //start given sketch.
+        var myp5 = new p5(s3, 'sketch');
+      });
+
+      Reveal.addEventListener('sketch2', function() {
+        document.getElementById("sketch").innerHTML = "";
+        //start given sketch.
+        var myp5 = new p5(s2, 'sketch');
+      });
+
+      Reveal.addEventListener('clear', function() {
+        document.getElementById("sketch").innerHTML = "";
+      });
+
+		</script>
+
+	</body>
+</html>
